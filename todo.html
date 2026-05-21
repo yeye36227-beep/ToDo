@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="h3"></h3>
+    <div id="dd">
+    <input class="inputcontent" type="text"/>
+    <button id="bttn" class= "btn">+</button>
+    <div class="todolist"></div>
+    </div>
+    <script src="todo.js"></script>
+    <script>
+        const login = localStorage.getItem('login');
+        const login1 = document.createElement('h3');
+        login1.textContent = `${login}님 환영합니다`;
+        document.getElementById('h3').appendChild(login1);
+    </script>
+</body>
+</html>
